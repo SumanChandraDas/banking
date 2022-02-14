@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking</title>
+    <!-- tailwind cdn link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h2 class="text-5xl	text-center	mt-16">Lets get some
+            <span class="font-semibold	text-amber-400	">money !!!</span>
+        </h2>
+
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- Diposit and Balance withdraw -->
+        <section class=" mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-emerald-500	p-8 rounded">
+                    <h3 class="text-3xl	">Diposit</h3>
+                    <h4 class="text-5xl	">$<span id="diposit-total">00</span></h4>
+                </div>
+                <div class="bg-orange-500 p-8 rounded">
+                    <h3 class="text-3xl	">Withdraw</h3>
+                    <h4 class="text-5xl	">$<span id="withdraw-total">00</span></h4>
+                </div>
+                <div class="bg-lime-500	p-8 rounded">
+                    <h3 class="text-3xl	">Balance</h3>
+                    <h4 class="text-5xl	">$<span id="balance-total">00</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diposit and withdraw  -->
+        <section>
+            <div class="grid grid-cols-2 gap-4 text-white mt-8">
+                <!-- diposit form  -->
+                <div class="bg-fuchsia-200 p-8 rounded ">
+                    <h2 class="text-2xl font-semibold mb-4 text-black">Plese Diposit</h2>
+
+                    <input id="diposit-input" class="border-2 border-gray-500	rounded	px-1 block mb-4 w-3/4 text-black"
+                        type="text" placeholder="Enter Your money for deposit">
+                    <button id="diposit-button"
+                        class="bg-orange-500 rounded px-3 text-white font-semibold py-1">Diposit</button>
+                </div>
+
+                <div class="bg-rose-200 p-8 rounded ">
+                    <h2 class="text-2xl font-semibold mb-4 text-black">Plese Withdraw</h2>
+                    <input id="withdraw-input" class="border-2 border-gray-500	rounded	px-1 block mb-4 w-3/4 text-black"
+                        type="text" placeholder="Enter Your money for withdraw">
+                    <button id="withdraw-button"
+                        class="bg-orange-500 rounded px-3 text-white font-semibold py-1">withdraw</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
