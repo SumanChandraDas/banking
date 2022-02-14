@@ -7,12 +7,17 @@ document.getElementById("diposit-button").addEventListener("click", function () 
     const dipositAmount = document.getElementById("diposit-total");
     const dipositAmountValue = parseFloat(dipositAmount.innerText);
 
+    // add into diposit 
     let totalDiposet = dipositAmountValue + dipositInputValue;
     dipositAmount.innerText = totalDiposet;
 
+    // add into balance 
+    const balance = document.getElementById('balance-total');
+    const balanceValue = parseFloat(balance.innerText);
+
+    let totalBalance = balanceValue + dipositInputValue;
+    balance.innerText = totalBalance;
+
     dipositInput.value = '';
-
-
-
 
 })
